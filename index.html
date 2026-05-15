@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Customer Registration Form</title>
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #2563eb);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.card {
+    width: 100%;
+    max-width: 460px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+h1 {
+    margin: 0 0 10px;
+    text-align: center;
+    color: #111827;
+    font-size: 28px;
+}
+p {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 24px;
+}
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+    color: #374151;
+}
+input, textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+input:focus, textarea:focus {
+    border-color: #2563eb;
+}
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background: #1d4ed8;
+}
+.footer {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 12px;
+    color: #9ca3af;
+}
+</style>
+</head>
+<body>
+<div class="card">
+    <h1>Customer Registration</h1>
+    <p>Please fill in your details below.</p>
+
+    <form action="https://formsubmit.co/razadyhali@gmail.com" method="POST">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="Name" placeholder="Enter your full name" required>
+
+        <label for="number">Number</label>
+        <input id="number" type="tel" name="Number" placeholder="Enter your phone number" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="Email" placeholder="Enter your email address" required>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="Address" placeholder="Enter your address" required></textarea>
+
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Landing Page Submission">
+        <input type="hidden" name="_template" value="table">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="footer">
+        Responses will be sent to razadyhali@gmail.com
+    </div>
+</div>
+</body>
+</html>
